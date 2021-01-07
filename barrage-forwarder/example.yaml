@@ -1,0 +1,23 @@
+# The path of log file
+log.path: 'barrage-forwarder.log'
+# The list of source configurations
+sources:
+  - type: douyu
+    roomids:
+      - 196
+      - 52004
+# The list of output configurations
+output:
+  - type: file
+    path: output.log
+#  - type: kafka
+#    brokers: 127.0.0.1:9092
+#    topic: test
+#  - type: elasticsearch
+#    index: barrage
+#    bulkActions:  1000
+#    bulkSize: 5000
+#    flushInterval: 600000
+#    urls:
+#      - http://127.0.0.1:9200
+#      - http://127.0.0.1:9210
